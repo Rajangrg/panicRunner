@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\playerCamera\CameraMotor.cs" />
     <Compile Include="Assets\Scripts\playerMoment\PlayerMotor.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Game Development/panicRunner/panicRunner/Panic Runner/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
