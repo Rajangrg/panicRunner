@@ -91,25 +91,22 @@ public class PlayerMotor : MonoBehaviour
         Vector3 moveCharacter = Vector3.zero;
         moveCharacter.x = (targetPosition - transform.position).normalized.x * characterSpeed;
 
-        
-
+        bool isGrounded = IsGrounded();
+        anim.SetBool("Grounded", isGrounded);
 
         //calcualte y
-        if (IsGrounded())
+        if (isGrounded)
         {
             verticalVelocity = -0.1f;
-        
-
+           
             if (Input.GetKeyDown(KeyCode.Space))
             {
-               
+                anim.SetTrigger("Jump");
                 verticalVelocity = jumpForce;
-             
             }
         }
         else
-        {
-          
+        { 
             verticalVelocity -= (gravity * Time.deltaTime);
             //fast fall
             if (Input.GetKeyDown(KeyCode.Space))
