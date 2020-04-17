@@ -6,11 +6,11 @@ public class CameraMotor : MonoBehaviour
 {
     public Transform lookAt; // looks at character
     public Vector3 startOffSet = new Vector3(0,2.0f,-2.5f); 
-    private Vector3 moveVector;
+  /*  private Vector3 moveVector;
 
     private float transition = 0.0f;
     private float animationDuration = 3.0f;
-    private Vector3 animationOffset = new Vector3(0,5.0f,5.0f); //5 meter closer
+    private Vector3 animationOffset = new Vector3(0,5.0f,5.0f); //5 meter closer*/
 
     private void Start()
     {
